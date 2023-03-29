@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #D0D6F9;
+    background: rgb(21,17,86);
+    background: linear-gradient(90deg, rgba(21,17,86,1) 21%, rgba(108,9,121,1) 100%, rgba(0,212,255,1) 100%);
+}
+
+/* -------------------- */
+/*     BASIC RESET      */
+/* -------------------- */
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+:root {
+    /* COLORS */
+    --clr-dark: 230 35% 7%;
+    --clr-accent: 231 77% 90%;
+    --clr-white: 0 0% 100%;
+    --gap: 3rem;
+  
+    /* FONT SIZES */
+    --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
+    --fs-800: 3.5rem;
+    --fs-700: 1.5rem;
+    --fs-600: 1rem;
+    --fs-500: 1rem;
+    --fs-400: 0.9375rem;
+    --fs-300: 1rem;
+    --fs-200: 0.875rem;
+  
+    /* FONT-FAMILIES */
+    --ff-serif: "Bellefair", serif;
+    --ff-sans-cond: "Barlow Condensed", sans-serif;
+    --ff-sans-normal: "Barlow", sans-serif;
+  }
+  
+  /* Global Reset */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  /* Margin Reset */
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  picture {
+    margin: 0;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    font-weight: 400;
+  }
+  
+  body {
+    font-family: var(--ff-sans-normal);
+    font-size: var(--fs-400);
+    background-color: hsl(var(--clr-dark));
+    color: hsl(var(--clr-accent));
+    min-height: 100vh;
+    line-height: 1.6;
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    overflow-x: hidden;
+  }
+  
+  img,
+  picture {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+  input,
+  button,
+  textarea,
+  select {
+    font-family: inherit;
+  }
+
+.flex {
+    display: flex;
+}
+
+nav.flex {
+    justify-content: space-between;
+}
+
+.navigation {
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba( 227, 203, 203, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+    border-radius: 2px;
+    padding: 2rem 2rem 2rem 0rem;
+}
+
+.navigation.flex{
+    justify-content:space-evenly;
+    gap: 3.1rem;
+    padding-left: 2rem;
+}
+
+nav {
+    margin-top: 2rem;
+}
+
+.navigation>li>span {
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.firstText {
+    width: 45%;
+}
+
+.firstcontainer {
+    justify-content: center;
+    align-items: center;
+    padding-left: 3rem;
+    
+}
+
+.firstImage {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    transform: scale(0.5);
+    justify-self:center;
+}
+
+.firstImage img{
+    border-radius: 50%;
+}
